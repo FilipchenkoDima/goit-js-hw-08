@@ -13,4 +13,6 @@ function currentTimeUpdate(evt) {
 
 const currentTimeAfterStop = localStorage.getItem(LOCALSTORAGE_KEY);
 
-player.setCurrentTime(currentTimeAfterStop);
+if (currentTimeAfterStop) {
+    player.setCurrentTime(currentTimeAfterStop);
+};
